@@ -5,8 +5,6 @@ files:
     destination: /home/ubuntu/new_chatapp/
   - source: /gunicorn.service
     destination: /etc/systemd/system/
-  - source: /fundo
-    destination: /etc/nginx/sites-available/
 hooks:
   BeforeInstall:
     - location: /scripts/install_dependencies.sh
