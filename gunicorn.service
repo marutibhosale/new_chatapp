@@ -2,9 +2,9 @@
 Description=gunicorn daemon
 after=network.target
 [Service]
-User=ubuntu
+User=ec2-user
 Group=www-data
-WorkingDirectory=/home/ubuntu/new_chatapp/fundoo
+WorkingDirectory=/home/ec2-user/new_chatapp/fundoo
 ExecStart=/usr/local/bin/gunicorn --workers 3 --bind 0.0.0.0:8000 fundoo.wsgi:application
 [Install]
 WantedBy=multi-user.target
