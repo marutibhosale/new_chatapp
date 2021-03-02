@@ -3,7 +3,7 @@ Description=gunicorn daemon
 after=network.target
 [Service]
 User=ec2-user
-Group=www-data
+Group=ec2-user
 WorkingDirectory=/home/ec2-user/new_chatapp/fundoo
 ExecStart=/usr/local/bin/gunicorn --workers 3 --bind 0.0.0.0:8000 fundoo.wsgi:application
 [Install]
