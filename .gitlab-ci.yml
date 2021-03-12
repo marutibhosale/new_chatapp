@@ -9,7 +9,7 @@ build-code-job:
   before_script:
     - mkdir new_chatapp
   script:
-    - cp ./* new_chatapp
+    - cp ./new_chatapp new_chatapp
 
 deploy-code-job:
   tags:
