@@ -7,7 +7,7 @@ build-code-job:
     - ci
   stage: build
   script:
-    - cp -r ./* /home/ubuntu/new_chatapp
+    - sudo cp -r ./* /home/ubuntu/new_chatapp
 
 deploy-code-job:
   tags:
