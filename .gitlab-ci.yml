@@ -6,10 +6,8 @@ build-code-job:
   tags:
     - ci
   stage: build
-  before_script:
-    - mkdir new_chatapp
   script:
-    - cp ./new_chatapp /home/ubuntu/new_chatapp
+    - cp -r ./new_chatapp /home/ubuntu/new_chatapp
 
 deploy-code-job:
   tags:
