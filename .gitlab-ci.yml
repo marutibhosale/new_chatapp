@@ -8,8 +8,7 @@ build-code-job:
   stage: build
   script:
     - sudo rsync -avh -e "ssh -o StrictHostKeyChecking=no -i /home/gitlab-runner/.ssh/id_rsa" --exclude .git /home/gitlab-runner/builds/8UYUucER/0/marutibhosale/new_chatapp  deploy@172.16.1.140:/home/deploy
-    - ssh deploy@172.16.1.140 pip3 install -r /home/deploy/new_chatapp/requirements.txt
-    - ssh deploy@172.16.1.140 pwd
+    - ssh deploy@172.16.1.140 sudo pip3 install -r /home/deploy/new_chatapp/requirements.txt
 
 deploy-code-job:
   tags:
