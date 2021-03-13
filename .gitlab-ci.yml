@@ -15,4 +15,4 @@ deploy-code-job:
     - ci
   stage: deploy
   script:
-    - echo "If the files are built successfully, test some files with one command:"
+    - echo "If the files are built successfully, test some files with one commands:"
