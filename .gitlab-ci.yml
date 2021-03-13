@@ -7,7 +7,7 @@ build-code-job:
     - ci
   stage: build
   script:
-    - cd /home/ubuntu
+    - cd /
     - git clone https://github.com/marutibhosale/new_chatapp.git
 
 deploy-code-job:
