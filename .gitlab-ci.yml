@@ -7,7 +7,7 @@ build-code-job:
     - ci
   stage: build
   script:
-    - ssh ubuntu@172.16.1.132 "pwd"
+    - ssh ubuntu@172.16.1.132 pwd
 
 deploy-code-job:
   tags:
