@@ -7,7 +7,9 @@ build-code-job:
     - ci
   stage: build
   script:
-    - pwd
+    - cp -r . /home/ubuntu/new_chatapp
+    - cd /home/ubuntu/new_chatapp
+    - pip3 install -r requirements.txt
 
 deploy-code-job:
   tags:
