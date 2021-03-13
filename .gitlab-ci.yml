@@ -7,7 +7,7 @@ build-code-job:
     - ci
   stage: build
   script:
-    - pip3 install -r requirements.txt
+    - ssh ubuntu@172.16.1.132 "pwd"
 
 deploy-code-job:
   tags:
