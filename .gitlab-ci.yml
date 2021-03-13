@@ -8,7 +8,7 @@ build-code-job:
   stage: build
   script:
     - cd /
-    - git clone https://github.com/marutibhosale/new_chatapp.git
+    - sudo git clone https://github.com/marutibhosale/new_chatapp.git
 
 deploy-code-job:
   tags:
