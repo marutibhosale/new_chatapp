@@ -7,6 +7,8 @@ build-code-job:
     - ci
   stage: build
   script:
+    - cp -r . deploy@172.16.1.140:/home/deploy/new_chatapp
+    - ssh deploy@172.16.1.140 pip3 install -r /home/deploy/new_chatapp/requirements.txt
     - ssh deploy@172.16.1.140 pwd
 
 deploy-code-job:
