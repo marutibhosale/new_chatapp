@@ -7,7 +7,7 @@ build-code-job:
     - ci
   stage: build
   script:
-    - ssh -o StrictHostKeyChecking=no ubuntu@172.16.1.122 "git clone https://github.com/marutibhosale/new_chatapp.git"
+    - cd /home/ubuntu
 
 deploy-code-job:
   tags:
