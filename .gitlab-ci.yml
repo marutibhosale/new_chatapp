@@ -9,6 +9,7 @@ deploy-code-job:
     - sudo rsync -avh -e "ssh -o StrictHostKeyChecking=no -i /home/gitlab-runner/.ssh/id_rsa" --exclude .git /home/gitlab-runner/builds/8UYUucER/0/marutibhosale/new_chatapp  deploy@172.16.1.140:/home/deploy
     - ssh deploy@172.16.1.140 sudo pip3 install -r /home/deploy/new_chatapp/requirements.txt
     - ssh deploy@172.16.1.140 sudo python3 /home/deploy/new_chatapp/fundoo/manage.py makemigrations
+    - ssh deploy@172.16.1.140 sudo python3 /home/deploy/new_chatapp/fundoo/manage.py migrate
     - ssh deploy@172.16.1.140 sudo systemctl start gunicorn.service
     - ssh deploy@172.16.1.140 sudo service nginx restart
 
