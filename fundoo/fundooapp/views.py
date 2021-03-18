@@ -36,7 +36,7 @@ def Signup(request):
             user.is_active = True  # user disabled
             user.save()  # stores in database.
             # current_site = get_current_site(request)
-            message = render_to_string('acc_email.html', {
+            '''message = render_to_string('acc_email.html', {
                 'user': user,
                 'domain':'http://13.232.251.134/',
                 # 'domain': current_site.domain,
@@ -47,7 +47,7 @@ def Signup(request):
             to_email = form.cleaned_data.get('email')  # mail id to be sent to
             email = EmailMessage(mail_subject, message,
                                  to=[to_email])  # takes 3 arguments mail_subject, message, mail_id to send
-            email.send()  # sends mail
+            email.send()  # sends mail'''
             return HttpResponse('The confirmation link has been sent to your mail id..\n'
                                 'Please click on given link and confirm your registration....')
 
