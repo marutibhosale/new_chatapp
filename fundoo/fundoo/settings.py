@@ -19,12 +19,12 @@ ALLOWED_HOSTS = ['*']
 
 
 # Email verification
-EMAIL_USE_TLS = True            # Email Tools true
-EMAIL_HOST = 'smtp.gmail.com'   # SMTP protocol for mail transfer
-EMAIL_HOST_USER = 'abc@gmail.com'   # email to be send from user
-EMAIL_HOST_PASSWORD = 'jskdnsndask'                   # password
-EMAIL_PORT = 587                                       # default email port
-DEFAULT_FROM_EMAIL = 'TestSite Team <noreply@example.com>'  # subject for email
+#EMAIL_USE_TLS = True            # Email Tools true
+#EMAIL_HOST = 'smtp.gmail.com'   # SMTP protocol for mail transfer
+#EMAIL_HOST_USER = 'abc@gmail.com'   # email to be send from user
+#EMAIL_HOST_PASSWORD = 'jskdnsndask'                   # password
+#EMAIL_PORT = 587                                       # default email port
+#DEFAULT_FROM_EMAIL = 'TestSite Team <noreply@example.com>'  # subject for email
 
 
 AUTHENTICATION_BACKENDS = (
