@@ -4,7 +4,8 @@ after=network.target
 [Service]
 User=ubuntu
 Group=ubuntu
-WorkingDirectory=/home/gitlab-runner/builds/1E1DnQjE/0/marutibhosale/new_chatapp/fundoo
+#WorkingDirectory=/home/gitlab-runner/builds/1E1DnQjE/0/marutibhosale/new_chatapp/fundoo
+WorkingDirectory=/home/ubuntu/new_chatapp/fundoo
 ExecStart=/home/ubuntu/.local/bin/gunicorn --workers 3 --bind 0.0.0.0:8000 fundoo.wsgi:application
 [Install]
 WantedBy=multi-user.target
